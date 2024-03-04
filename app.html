@@ -30,7 +30,6 @@
           <th scope="row">First Day of Last Menstrual Period (LMP)</th>
           <td data-label="First Day of Last Menstrual Period (LMP)">
             <input type="text" id="maherhossainDatepicker" />
-            01-11-2023
           </td>
         </tr>
 
@@ -44,7 +43,7 @@
           <td
             data-label="Conception Occurred (about two weeks after last menstrual period)"
           >
-            <b>Wednesday, November 15, 2023</b>
+            <b id="maherhossainCO"></b>
           </td>
         </tr>
         <tr>
@@ -53,7 +52,8 @@
           </th>
           <td data-label="Dating Scan (between weeks 7 and 12)">
             <span
-              ><b>20th December 2023 to 24th January 2024</b><br />
+              ><b id="maherhossainDS-1"></b> to <b id="maherhossainDS-2"></b
+              ><br />
               <i
                 >This scan will help to confirm your baby’s expected delivery
                 date</i
@@ -67,7 +67,7 @@
           </th>
           <td data-label="NIPT Testing (from week 10)">
             <span
-              ><b>10th January 2024</b><br />
+              ><b id="maherhossainNIPT"></b><br />
               <i
                 >Screening for Down syndrome and other chromosomal anomalies</i
               ></span
@@ -86,7 +86,8 @@
             data-label="Nuchal Translucency Scan (approx 12 weeks to 13.5 weeks)"
           >
             <span
-              ><b>24th January 2024 to 5th February 2024</b><br />
+              ><b id="maherhossainNT-1"></b> to <b id="maherhossainNT-2"></b
+              ><br />
               <i
                 >Screening for Down syndrome and a review of baby’s
                 development</i
@@ -105,7 +106,8 @@
             data-label="Pre-eclampsia screening (approx 12 weeks to 13.5 weeks)"
           >
             <span
-              ><b>24th January 2024 to 5th February 2024</b><br />
+              ><b id="maherhossainPES-1"></b> to <b id="maherhossainPES-2"></b
+              ><br />
               <i
                 >Detects 90% of pregnant women who will develop pre-eclampsia</i
               ></span
@@ -118,7 +120,8 @@
           </th>
           <td data-label="Structural Scan (between week 12 and 16)">
             <span
-              ><b>24th January 2024 to 21st February 2024</b><br />
+              ><b id="maherhossainSS-1"></b> to <b id="maherhossainSS-2"></b
+              ><br />
               <i>Scan to review baby’s development</i></span
             >
           </td>
@@ -130,14 +133,17 @@
           </th>
           <td data-label="Morphology Scan (between 19 – 20 weeks)">
             <span
-              ><b>13th March 2024 to 20th March 2024</b><br />
+              ><b id="maherhossainMS-1"></b> to <b id="maherhossainMS-2"></b
+              ><br />
               <i>Detailed review of your baby’s complex organs</i></span
             >
           </td>
         </tr>
         <tr>
           <th scope="row">Estimated Due Date (EDD)</th>
-          <td data-label="Estimated Due Date"><b>7th August 2024</b></td>
+          <td data-label="Estimated Due Date">
+            <b id="maherhossainEDD"></b>
+          </td>
         </tr>
         <tr>
           <th scope="row">
@@ -145,22 +151,21 @@
           </th>
           <td data-label="Growth Scan (from 24 weeks)">
             <span
-              ><b>17th April 2024</b><br />
+              ><b id="maherhossainGS"></b><br />
               <i>Checks your baby’s health, position, size and growth</i></span
             >
           </td>
         </tr>
       </tbody>
-      <tfoot>
-        <tr>
-          <th scope="row" colspan="2">
-            <span class="mahaerhossain-text-center"
-              >On ____ , you will be ___ weeks ___ days pregnant.</span
-            >
-          </th>
-        </tr>
-      </tfoot>
     </table>
+    <div id="maherhossain-current-status">
+      <p class="mahaerhossain-text-center">
+        On <span id="mh-current-date"></span>,
+        <span id="mh-current-text-change">you are currently</span>
+        <span id="mh-current-weeks"></span> weeks
+        <span id="mh-current-days"></span> days pregnant.
+      </p>
+    </div>
 
     <script src="main.js"></script>
   </body>

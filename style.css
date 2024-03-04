@@ -178,9 +178,8 @@ th {
 .dcf-w-100\% {
   width: 100% !important;
 }
-.mahaerhossain-text-center {
+#maherhossain-current-status .mahaerhossain-text-center {
   text-align: center !important;
-  display: block !important;
 }
 
 #maherhossainDatepicker {
@@ -197,4 +196,10 @@ td {
 }
 #maherhossain-pc tbody tr i {
   font-weight: 500 !important;
+}
+#mh-current-date,
+#mh-current-weeks,
+#mh-current-days {
+  background: #f2f2f2;
+  padding: 10px 15px;
 }
