@@ -1,0 +1,29 @@
+#final p {
+  text-align: center;
+}
+#maherhossain-current-status .mahaerhossain-text-center,
+tfoot td {
+  text-align: center !important;
+}
+
+#maherhossainDatepicker {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+#maherhossain-pc tbody tr th,
+td {
+  vertical-align: middle !important;
+}
+#maherhossain-pc tbody tr i {
+  font-weight: 500 !important;
+}
+#mh-current-date,
+#mh-current-weeks,
+#mh-current-days {
+  background: #f2f2f2;
+  padding: 0 10px;
+}

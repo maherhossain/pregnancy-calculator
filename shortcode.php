@@ -1,23 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://jqueryui.com/resources/demos/style.css"
-    />
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<?php
 
-    <title>Pregnancy Calculator</title>
-  </head>
-  <body>
+add_shortcode('pregnancy-calculator', 'maher_pragnancy_calculator');
+
+function maher_pragnancy_calculator(){
+	ob_start();?>
+<section>
     <table
       id="maherhossain-pc"
       class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100%"
@@ -165,7 +152,9 @@
         </tr>
       </tfoot>
     </table>
+</section>
+<div class="clear"></div>
 
-    <script src="js/main.js"></script>
-  </body>
-</html>
+
+	<?php return ob_get_clean();
+}
