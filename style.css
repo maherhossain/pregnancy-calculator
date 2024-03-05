@@ -1,5 +1,5 @@
 :root {
-  --bg-table-stripe: #f6f6f5;
+  --bg-table-stripe: #c2cfd2;
   --b-table: #e3e3e2;
   --caption: #242423;
 }
@@ -55,7 +55,7 @@ th {
 .dcf-table-bordered,
 .dcf-table-bordered td,
 .dcf-table-bordered th {
-  border: 1px solid var(--b-table);
+  /* border: 1px solid var(--b-table); */
 }
 
 .dcf-table-bordered td,
@@ -85,13 +85,13 @@ th {
 .dcf-table tbody th,
 .dcf-table tfoot td,
 .dcf-table tfoot th {
-  padding-top: 0.75em;
+  padding-top: 1em;
   vertical-align: top;
 }
 
 .dcf-table tbody td,
 .dcf-table tbody th {
-  padding-bottom: 0.75em;
+  padding-bottom: 1em;
 }
 
 .dcf-table-bordered thead th {
@@ -126,13 +126,14 @@ th {
     display: block;
   }
 
-  .dcf-table-responsive td {
+  .dcf-table-responsive td,
+  tbody th {
     -webkit-column-gap: 3.16vw;
     -moz-column-gap: 3.16vw;
     column-gap: 3.16vw;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    text-align: left !important;
+    grid-template-columns: 1fr;
+    text-align: center !important;
   }
 
   .dcf-table-responsive.dcf-table-bordered,
@@ -178,7 +179,8 @@ th {
 .dcf-w-100\% {
   width: 100% !important;
 }
-#maherhossain-current-status .mahaerhossain-text-center {
+#maherhossain-current-status .mahaerhossain-text-center,
+tfoot td {
   text-align: center !important;
 }
 
@@ -201,5 +203,5 @@ td {
 #mh-current-weeks,
 #mh-current-days {
   background: #f2f2f2;
-  padding: 10px 15px;
+  padding: 0 10px;
 }
