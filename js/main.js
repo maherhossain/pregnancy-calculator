@@ -104,13 +104,18 @@
     const weeks = Math.floor(diffDays / 7);
     const days = diffDays - weeks * 7;
 
-    if (weeks >= 0 && days >= 0) {
+    if (weeks >= 0 && days >= 0 && weeks <= 42) {
       $("#mh-current-date").text(dateConstruction(today));
       $("#mh-current-weeks").text(weeks);
       $("#mh-current-days").text(days);
+    } else if (weeks > 42) {
+      $(".mhpc-text-center").html(
+        "<b>Seems your bundle of joy has already arrived! Congratulations on your newest addition to the family.</b>"
+      );
     } else {
-      $("#mh-current-weeks").text("");
-      $("#mh-current-days").text("");
+      $(".mhpc-text-center").html(
+        "<p><b>Anticipation awaits! Your journey into parenthood is yet to begin. Embrace the beautiful moments that lie ahead.</b></p>"
+      );
     }
   }
 })(jQuery);

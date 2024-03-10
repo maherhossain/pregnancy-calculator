@@ -1,6 +1,6 @@
 === Pregnancy Calculator ===
 Contributors: maherhossain
-Donate link: https://maherhossain.com
+Donate link: https://www.paypal.me/sheikhmunna13
 Tags: Pregnancy Calculator, simple Pregnancy Calculator, pregnancy month calculator, pregnancy week calculator, pregnancy milestone calculator, Pregnancy Calendar, pregnancy calendar by due date
 Requires at least: 4.6
 Tested up to: 6.4.3
@@ -95,10 +95,11 @@ On average only 5% of births take place exactly on the estimated due date. Most 
  * Version 2.1.0 Initial Release
  * Bug Fix
 
-= 3.0.0 =
+= 3.0.1 =
  * Change the Selection Pattern
  * Use jQuery UI calander
  * Fix Bugs
  * Fix Design Issues
+ * Improved Design and Functionality
 
 

@@ -1,0 +1,15 @@
+#mhpcnew-design table tr td,
+#mhpcnew-design table tr th {
+  padding: 10px;
+}
+#mhpcnew-design table tr:nth-child(1),
+#mhpcnew-design table tr:nth-child(4),
+#mhpcnew-design table tr:nth-child(5),
+#mhpcnew-design table tr:nth-child(8),
+#mhpcnew-design table tr:nth-child(9),
+#mhpcnew-design table tr:nth-child(12),
+#mhpcnew-design table tr:nth-child(13),
+#mhpcnew-design table tr:nth-child(16),
+#mhpcnew-design table tr:nth-child(17) {
+  background-color: #f7f7f7;
+}
